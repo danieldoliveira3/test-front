@@ -129,3 +129,39 @@ ul {
 .orange {
   color: #ff7800;
 }
+
+.totalWrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+.totalBox {
+  min-width: 341px;
+  margin: 0 auto;
+  padding: 14px;
+  color: #212122;
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: NaNpx;
+  line-height: 17px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.totalFlexbox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.totalPrice {
+  margin-top: 15px;
+  color: #212122;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+}

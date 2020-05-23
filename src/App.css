@@ -150,4 +150,46 @@ ul li:last-child {
   color: #ff7800;
 }
 
+/* line 133, ../../DEV/test-front/src/Input/App.scss */
+.totalWrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+/* line 139, ../../DEV/test-front/src/Input/App.scss */
+.totalBox {
+  min-width: 341px;
+  margin: 0 auto;
+  padding: 14px;
+  color: #212122;
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: NaNpx;
+  line-height: 17px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+/* line 152, ../../DEV/test-front/src/Input/App.scss */
+.totalFlexbox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+/* line 156, ../../DEV/test-front/src/Input/App.scss */
+.totalFlexbox:last-child {
+  margin-bottom: 0;
+}
+
+/* line 161, ../../DEV/test-front/src/Input/App.scss */
+.totalPrice {
+  margin-top: 15px;
+  color: #212122;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
 /*# sourceMappingURL=App.css.map */
