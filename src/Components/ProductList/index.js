@@ -1,4 +1,5 @@
 import React from "react";
+import ProductBox from "./../ProductBox";
 
 function ProductList(props) {
   return (
@@ -6,23 +7,8 @@ function ProductList(props) {
       <p className="titleProduct">PRODUTOS</p>
       <div className="wrapProducts">
         <div id="productList">
-          {props.item.map((item) => {
-            return (
-              <div className="productBox">
-                <div className="productIgmAndName">
-                  <img
-                    src={item.product.imageObjects.map((img) => img.small)}
-                    alt={item.product.name}
-                  />
-                  <div className="wrapNameAndPrice">
-                    <p>{item.product.name}</p>
-                    <div className="productPrice">
-                      R$ {item.product.priceSpecification.price}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
+          {props.item.map((item, index) => {
+            return <ProductBox item={item} key={index} />;
           })}
         </div>
       </div>

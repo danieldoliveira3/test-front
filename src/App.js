@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Menu from "./Components/Menu";
-import Product from "./Components/ProductList";
+import ProductList from "./Components/ProductList";
+import Total from "./Components/Total";
 import "./App.css";
 
 class App extends Component {
@@ -44,23 +45,8 @@ class App extends Component {
     return (
       <div>
         <Menu />
-        <Product item={items} />
-
-        <h2>
-          Total:{" "}
-          {loaded ? (
-            (result.subTotal - result.discount + result.shippingTotal).toFixed(
-              2
-            )
-          ) : (
-            <div>carregando</div>
-          )}
-        </h2>
-        <h2>Desconto: {loaded ? result.discount : <div>carregando</div>}</h2>
-        <h2>
-          Entrega: {loaded ? result.shippingTotal : <div>carregando</div>}
-        </h2>
-        <h2>Subtotal: {loaded ? result.subTotal : <div>carregando</div>}</h2>
+        <ProductList item={items} />
+        <Total result={result} loaded={loaded} />
       </div>
     );
   }
