@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Menu from "./Components/Menu";
 import ProductList from "./Components/ProductList";
 import Total from "./Components/Total";
+import NextStepButton from "./Components/NextStepButton";
 import "./App.css";
 
 class App extends Component {
@@ -47,6 +48,7 @@ class App extends Component {
         <Menu />
         <ProductList item={items} />
         <Total result={result} loaded={loaded} />
+        <NextStepButton text="SEGUIR PARA O PAGAMENTO" />
       </div>
     );
   }
