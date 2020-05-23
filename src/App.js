@@ -1,26 +1,81 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Menu from "./Components/Menu";
+import Product from "./Components/Product";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      result: [],
+      items: [],
+      loaded: false,
+
+      url: "http://www.mocky.io/v2/5b15c4923100004a006f3c07",
+      total: 0,
+    };
+  }
+  const;
+  componentDidMount() {
+    // fetch(this.state.url)
+    //   .then((answer) => {
+    //     return answer.json();
+    //   })
+    //   .then((answerJson) =>
+    //     this.setState({ result: answerJson.items, carregou: true })
+    //   );
+    const { url } = this.state;
+    fetch(url)
+      .then((answer) => {
+        return answer.json();
+      })
+      .then((answerJson) => {
+        return this.setState({
+          result: answerJson,
+          items: answerJson.items,
+          loaded: true,
+        });
+      });
+  }
+
+  render() {
+    const { result, items, loaded } = this.state;
+    return (
+      <div>
+        <Menu />
+        <div>
+          {items.map((item) => {
+            return (
+              <div>
+                <h3>{item.product.name}</h3>
+                <h3>{item.product.price}</h3>
+                <img
+                  src={item.product.imageObjects.map((img) => img.small)}
+                  alt={item.product.name}
+                />
+              </div>
+            );
+          })}
+        </div>
+        <h2>
+          Total:{" "}
+          {loaded ? (
+            (result.subTotal - result.discount + result.shippingTotal).toFixed(
+              2
+            )
+          ) : (
+            <div>carregando</div>
+          )}
+        </h2>
+        <h2>Desconto: {loaded ? result.discount : <div>carregando</div>}</h2>
+        <h2>
+          Entrega: {loaded ? result.shippingTotal : <div>carregando</div>}
+        </h2>
+        <h2>Subtotal: {loaded ? result.subTotal : <div>carregando</div>}</h2>
+      </div>
+    );
+  }
 }
 
 export default App;
