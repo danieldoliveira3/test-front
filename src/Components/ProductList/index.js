@@ -1,6 +1,6 @@
 import React from "react";
 
-function Product(props) {
+function ProductList(props) {
   return (
     <div className="outboxProduct">
       <p className="titleProduct">PRODUTOS</p>
@@ -30,4 +30,4 @@ function Product(props) {
   );
 }
 
-export default Product;
+export default ProductList;

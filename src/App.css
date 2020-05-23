@@ -15,10 +15,15 @@ body {
 /* line 12, ../../DEV/test-front/src/Input/App.scss */
 #menu {
   width: 100%;
+  min-height: 40px;
+  padding: 12px 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 29, 0.22);
 }
 
-/* line 14, ../../DEV/test-front/src/Input/App.scss */
-#menu ul {
+/* line 20, ../../DEV/test-front/src/Input/App.scss */
+ul {
   width: 100%;
   list-style: none;
   display: flex;
@@ -26,45 +31,55 @@ body {
   justify-content: center;
 }
 
-/* line 20, ../../DEV/test-front/src/Input/App.scss */
-#menu ul li {
-  margin-right: 20px;
+/* line 26, ../../DEV/test-front/src/Input/App.scss */
+ul li {
+  margin-right: 38px;
+  height: 16px;
+  width: 89px;
+  color: #ccc;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: NaNpx;
+  line-height: 16px;
+  text-align: center;
 }
 
-/* line 22, ../../DEV/test-front/src/Input/App.scss */
-#menu ul lilastchild {
+/* line 28, ../../DEV/test-front/src/Input/App.scss */
+ul li:last-child {
   margin-right: 0;
 }
 
-/* line 30, ../../DEV/test-front/src/Input/App.scss */
+/* line 45, ../../DEV/test-front/src/Input/App.scss */
 .outboxProduct p.titleProduct {
   height: 17px;
-  width: 100%;
+  min-width: 319px;
   color: #999;
-  font-family: "Roboto";
+  font-family: Roboto;
   font-size: 14px;
   margin-left: 20px;
   font-weight: 700;
   letter-spacing: NaNpx;
-  line-height: 17px;
+  margin: 15px 0 -5px 20px;
+  padding: 0;
 }
 
-/* line 43, ../../DEV/test-front/src/Input/App.scss */
+/* line 59, ../../DEV/test-front/src/Input/App.scss */
 .wrapProducts {
   padding: 12px;
 }
 
-/* line 46, ../../DEV/test-front/src/Input/App.scss */
+/* line 62, ../../DEV/test-front/src/Input/App.scss */
 #productList {
   min-width: 341px;
   border-radius: 3px;
   background-color: #fff;
   box-shadow: 1px 1px 5px 0 rgba(0, 0, 29, 0.22);
-  margin: 0 auto;
   padding: 12px;
+  margin: 0 auto;
 }
 
-/* line 54, ../../DEV/test-front/src/Input/App.scss */
+/* line 71, ../../DEV/test-front/src/Input/App.scss */
 .productBox {
   margin: 0 auto;
   min-width: 316px;
@@ -76,12 +91,12 @@ body {
   border: 1px solid #eee;
 }
 
-/* line 59, ../../DEV/test-front/src/Input/App.scss */
+/* line 76, ../../DEV/test-front/src/Input/App.scss */
 .productBox:last-child {
   margin-bottom: 0;
 }
 
-/* line 69, ../../DEV/test-front/src/Input/App.scss */
+/* line 86, ../../DEV/test-front/src/Input/App.scss */
 .productIgmAndName {
   width: 100%;
   display: flex;
@@ -90,17 +105,17 @@ body {
   padding: 0;
 }
 
-/* line 76, ../../DEV/test-front/src/Input/App.scss */
+/* line 93, ../../DEV/test-front/src/Input/App.scss */
 .productIgmAndName img {
   align-self: flex-start;
   width: 65px;
   height: 65px;
 }
 
-/* line 81, ../../DEV/test-front/src/Input/App.scss */
+/* line 98, ../../DEV/test-front/src/Input/App.scss */
 .productIgmAndName p {
   color: #212122;
-  font-family: "Roboto";
+  font-family: Roboto;
   font-size: 13px;
   font-weight: normal;
   letter-spacing: NaNpx;
@@ -111,7 +126,7 @@ body {
   overflow: hidden;
 }
 
-/* line 95, ../../DEV/test-front/src/Input/App.scss */
+/* line 112, ../../DEV/test-front/src/Input/App.scss */
 .wrapNameAndPrice {
   display: flex;
   min-height: 76px;
@@ -119,15 +134,20 @@ body {
   justify-content: space-between;
 }
 
-/* line 102, ../../DEV/test-front/src/Input/App.scss */
+/* line 119, ../../DEV/test-front/src/Input/App.scss */
 .productPrice {
   text-align: right;
   color: #212122;
-  font-family: "Roboto";
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: NaNpx;
   line-height: 17px;
+}
+
+/* line 129, ../../DEV/test-front/src/Input/App.scss */
+.orange {
+  color: #ff7800;
 }
 
 /*# sourceMappingURL=App.css.map */

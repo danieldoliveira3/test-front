@@ -4,7 +4,7 @@ function Menu(props) {
   return (
     <div id="menu">
       <ul className="menuList">
-        <li>SACOLA</li>
+        <li className="orange">SACOLA</li>
         <li>PAGAMENTO</li>
         <li>CONFIRMAÇÃO</li>
       </ul>
