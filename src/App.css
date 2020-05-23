@@ -1,14 +1,23 @@
 /* line 1, ../../DEV/test-front/src/Input/App.scss */
 body {
   width: 100%;
+  box-sizing: border-box;
+  background-color: #eee;
 }
 
-/* line 4, ../../DEV/test-front/src/Input/App.scss */
+/* line 7, ../../DEV/test-front/src/Input/App.scss */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 12, ../../DEV/test-front/src/Input/App.scss */
 #menu {
   width: 100%;
 }
 
-/* line 6, ../../DEV/test-front/src/Input/App.scss */
+/* line 14, ../../DEV/test-front/src/Input/App.scss */
 #menu ul {
   width: 100%;
   list-style: none;
@@ -17,14 +26,108 @@ body {
   justify-content: center;
 }
 
-/* line 12, ../../DEV/test-front/src/Input/App.scss */
+/* line 20, ../../DEV/test-front/src/Input/App.scss */
 #menu ul li {
   margin-right: 20px;
 }
 
-/* line 14, ../../DEV/test-front/src/Input/App.scss */
+/* line 22, ../../DEV/test-front/src/Input/App.scss */
 #menu ul lilastchild {
   margin-right: 0;
+}
+
+/* line 30, ../../DEV/test-front/src/Input/App.scss */
+.outboxProduct p.titleProduct {
+  height: 17px;
+  width: 100%;
+  color: #999;
+  font-family: "Roboto";
+  font-size: 14px;
+  margin-left: 20px;
+  font-weight: 700;
+  letter-spacing: NaNpx;
+  line-height: 17px;
+}
+
+/* line 43, ../../DEV/test-front/src/Input/App.scss */
+.wrapProducts {
+  padding: 12px;
+}
+
+/* line 46, ../../DEV/test-front/src/Input/App.scss */
+#productList {
+  min-width: 341px;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 29, 0.22);
+  margin: 0 auto;
+  padding: 12px;
+}
+
+/* line 54, ../../DEV/test-front/src/Input/App.scss */
+.productBox {
+  margin: 0 auto;
+  min-width: 316px;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  min-height: 90px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+}
+
+/* line 59, ../../DEV/test-front/src/Input/App.scss */
+.productBox:last-child {
+  margin-bottom: 0;
+}
+
+/* line 69, ../../DEV/test-front/src/Input/App.scss */
+.productIgmAndName {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+
+/* line 76, ../../DEV/test-front/src/Input/App.scss */
+.productIgmAndName img {
+  align-self: flex-start;
+  width: 65px;
+  height: 65px;
+}
+
+/* line 81, ../../DEV/test-front/src/Input/App.scss */
+.productIgmAndName p {
+  color: #212122;
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: NaNpx;
+  line-height: 16px;
+  text-overflow: ellipsis;
+  margin-bottom: 0;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+/* line 95, ../../DEV/test-front/src/Input/App.scss */
+.wrapNameAndPrice {
+  display: flex;
+  min-height: 76px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* line 102, ../../DEV/test-front/src/Input/App.scss */
+.productPrice {
+  text-align: right;
+  color: #212122;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: NaNpx;
+  line-height: 17px;
 }
 
 /*# sourceMappingURL=App.css.map */
