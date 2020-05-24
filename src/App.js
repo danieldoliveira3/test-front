@@ -38,9 +38,20 @@ class App extends Component {
     const { result, items, loaded } = this.state;
     return (
       <Router>
-        {" "}
         <Menu Link={Link} />
-        {/* <Bag result={result} loaded={loaded} items={items} /> */}
+        <Switch>
+          <Route path="/bag">
+            <Bag result={result} loaded={loaded} items={items} />
+          </Route>
+
+          <Route path="/payment">
+            <div>payment</div>
+          </Route>
+
+          <Route path="/confirmation">
+            <div>confirmation</div>
+          </Route>
+        </Switch>
       </Router>
     );
   }
