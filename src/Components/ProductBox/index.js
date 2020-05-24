@@ -1,17 +1,18 @@
 import React from "react";
 
 function ProductBox(props) {
+  const { items } = props;
   return (
     <div className="productBox">
       <div className="productIgmAndName">
         <img
-          src={props.item.product.imageObjects.map((img) => img.small)}
-          alt={props.item.product.name}
+          src={items.product.imageObjects.map((img) => img.small)}
+          alt={items.product.name}
         />
         <div className="wrapNameAndPrice">
-          <p>{props.item.product.name}</p>
+          <p>{items.product.name}</p>
           <div className="productPrice">
-            R$ {props.item.product.priceSpecification.price}
+            R$ {items.product.priceSpecification.price}
           </div>
         </div>
       </div>

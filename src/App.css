@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* line 11, ../../DEV/test-front/src/Input/App.scss */
@@ -18,7 +19,7 @@ body {
   color: #ccc;
 }
 
-/* line 17, ../../DEV/test-front/src/Input/App.scss */
+/* line 18, ../../DEV/test-front/src/Input/App.scss */
 #menu {
   width: 100%;
   min-height: 40px;
@@ -28,7 +29,7 @@ body {
   box-shadow: 1px 1px 5px 0 rgba(0, 0, 29, 0.22);
 }
 
-/* line 25, ../../DEV/test-front/src/Input/App.scss */
+/* line 26, ../../DEV/test-front/src/Input/App.scss */
 ul {
   width: 100%;
   list-style: none;
@@ -37,13 +38,13 @@ ul {
   justify-content: center;
 }
 
-/* line 31, ../../DEV/test-front/src/Input/App.scss */
+/* line 32, ../../DEV/test-front/src/Input/App.scss */
 ul li {
   margin-right: 38px;
   height: 16px;
   width: 89px;
   color: #ccc;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: NaNpx;
@@ -51,17 +52,17 @@ ul li {
   text-align: center;
 }
 
-/* line 33, ../../DEV/test-front/src/Input/App.scss */
+/* line 34, ../../DEV/test-front/src/Input/App.scss */
 ul li:last-child {
   margin-right: 0;
 }
 
-/* line 50, ../../DEV/test-front/src/Input/App.scss */
-.outboxProduct p.titleProduct {
+/* line 51, ../../DEV/test-front/src/Input/App.scss */
+.outboxWrap p.titleWrapBox {
   height: 17px;
   min-width: 319px;
   color: #999;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   margin-left: 20px;
   font-weight: 700;
@@ -70,13 +71,13 @@ ul li:last-child {
   padding: 0;
 }
 
-/* line 64, ../../DEV/test-front/src/Input/App.scss */
-.wrapProducts {
+/* line 65, ../../DEV/test-front/src/Input/App.scss */
+.wrapboxList {
   padding: 12px;
 }
 
-/* line 67, ../../DEV/test-front/src/Input/App.scss */
-#productList {
+/* line 68, ../../DEV/test-front/src/Input/App.scss */
+#wrapList {
   min-width: 341px;
   border-radius: 3px;
   background-color: #fff;
@@ -85,7 +86,7 @@ ul li:last-child {
   margin: 0 auto;
 }
 
-/* line 76, ../../DEV/test-front/src/Input/App.scss */
+/* line 77, ../../DEV/test-front/src/Input/App.scss */
 .productBox {
   margin: 0 auto;
   min-width: 316px;
@@ -97,12 +98,12 @@ ul li:last-child {
   border: 1px solid #eee;
 }
 
-/* line 81, ../../DEV/test-front/src/Input/App.scss */
+/* line 82, ../../DEV/test-front/src/Input/App.scss */
 .productBox:last-child {
   margin-bottom: 0;
 }
 
-/* line 91, ../../DEV/test-front/src/Input/App.scss */
+/* line 92, ../../DEV/test-front/src/Input/App.scss */
 .productIgmAndName {
   width: 100%;
   display: flex;
@@ -111,17 +112,17 @@ ul li:last-child {
   padding: 0;
 }
 
-/* line 98, ../../DEV/test-front/src/Input/App.scss */
+/* line 99, ../../DEV/test-front/src/Input/App.scss */
 .productIgmAndName img {
   align-self: flex-start;
   width: 65px;
   height: 65px;
 }
 
-/* line 103, ../../DEV/test-front/src/Input/App.scss */
+/* line 104, ../../DEV/test-front/src/Input/App.scss */
 .productIgmAndName p {
   color: #212122;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
   letter-spacing: NaNpx;
@@ -132,7 +133,7 @@ ul li:last-child {
   overflow: hidden;
 }
 
-/* line 117, ../../DEV/test-front/src/Input/App.scss */
+/* line 118, ../../DEV/test-front/src/Input/App.scss */
 .wrapNameAndPrice {
   display: flex;
   min-height: 76px;
@@ -140,30 +141,35 @@ ul li:last-child {
   justify-content: space-between;
 }
 
-/* line 124, ../../DEV/test-front/src/Input/App.scss */
+/* line 125, ../../DEV/test-front/src/Input/App.scss */
 .productPrice {
   text-align: right;
   color: #212122;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: NaNpx;
   line-height: 17px;
 }
 
-/* line 134, ../../DEV/test-front/src/Input/App.scss */
+/* line 135, ../../DEV/test-front/src/Input/App.scss */
 .orange {
   color: #ff7800;
 }
 
 /* line 138, ../../DEV/test-front/src/Input/App.scss */
+white {
+  color: white !important;
+}
+
+/* line 142, ../../DEV/test-front/src/Input/App.scss */
 .totalWrap {
   width: 100%;
   margin: 0 auto;
   padding: 12px;
 }
 
-/* line 144, ../../DEV/test-front/src/Input/App.scss */
+/* line 148, ../../DEV/test-front/src/Input/App.scss */
 .totalBox {
   min-width: 341px;
   margin: 0 auto;
@@ -177,19 +183,19 @@ ul li:last-child {
   border: 1px solid #ccc;
 }
 
-/* line 157, ../../DEV/test-front/src/Input/App.scss */
+/* line 161, ../../DEV/test-front/src/Input/App.scss */
 .totalFlexbox {
   display: flex;
   justify-content: space-between;
   margin-bottom: 9px;
 }
 
-/* line 161, ../../DEV/test-front/src/Input/App.scss */
+/* line 165, ../../DEV/test-front/src/Input/App.scss */
 .totalFlexbox:last-child {
   margin-bottom: 0;
 }
 
-/* line 166, ../../DEV/test-front/src/Input/App.scss */
+/* line 170, ../../DEV/test-front/src/Input/App.scss */
 .totalPrice {
   margin-top: 15px;
   color: #212122;
@@ -198,7 +204,7 @@ ul li:last-child {
   line-height: 17px;
 }
 
-/* line 174, ../../DEV/test-front/src/Input/App.scss */
+/* line 178, ../../DEV/test-front/src/Input/App.scss */
 .nextStep {
   height: 60px;
   display: flex;
@@ -211,18 +217,23 @@ ul li:last-child {
   box-shadow: inset 0 -3px 0 0 #d45a00, 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* line 184, ../../DEV/test-front/src/Input/App.scss */
+/* line 188, ../../DEV/test-front/src/Input/App.scss */
 .nextStep:active {
   background: #d45a00;
 }
 
-/* line 189, ../../DEV/test-front/src/Input/App.scss */
+/* line 193, ../../DEV/test-front/src/Input/App.scss */
 .nextStepText {
   color: #fff;
   font-family: "'Helvetica Neue', Helvetica, Arial, sans-serif";
   font-size: 20px;
   font-weight: 700;
   text-align: center;
+}
+
+/* line 199, ../../DEV/test-front/src/Input/App.scss */
+.nextStepText a {
+  color: white;
 }
 
 /*# sourceMappingURL=App.css.map */

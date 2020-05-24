@@ -12,6 +12,7 @@ body {
     text-decoration: none;
     color: #ccc;
   }
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #menu {
@@ -37,7 +38,7 @@ ul {
     height: 16px;
     width: 89px;
     color: #ccc;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: NaNpx;
@@ -46,12 +47,12 @@ ul {
   }
 }
 
-.outboxProduct {
-  p.titleProduct {
+.outboxWrap {
+  p.titleWrapBox {
     height: 17px;
     min-width: 319px;
     color: #999;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     margin-left: 20px;
     font-weight: 700;
@@ -61,10 +62,10 @@ ul {
   }
 }
 
-.wrapProducts {
+.wrapboxList {
   padding: 12px;
 }
-#productList {
+#wrapList {
   min-width: 341px;
   border-radius: 3px;
   background-color: #fff;
@@ -102,7 +103,7 @@ ul {
   }
   p {
     color: #212122;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: normal;
     letter-spacing: NaNpx;
@@ -124,7 +125,7 @@ ul {
 .productPrice {
   text-align: right;
   color: #212122;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: NaNpx;
@@ -133,6 +134,9 @@ ul {
 
 .orange {
   color: #ff7800;
+}
+white {
+  color: white !important;
 }
 
 .totalWrap {
@@ -192,4 +196,7 @@ ul {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
+  a {
+    color: white;
+  }
 }

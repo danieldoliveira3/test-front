@@ -50,7 +50,7 @@ class App extends Component {
             <Redirect to="/bag" />
           </Route>
           <Route path="/bag">
-            <Bag result={result} loaded={loaded} items={items} />
+            <Bag result={result} loaded={loaded} items={items} Link={Link} />
           </Route>
 
           <Route path="/payment">
