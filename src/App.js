@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import Menu from "./Components/Menu";
-import ProductList from "./Components/ProductList";
-import Total from "./Components/Total";
-import NextStepButton from "./Components/NextStepButton";
 import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Bag from "./Pages/Bag";
 
 class App extends Component {
   constructor(props) {
@@ -20,13 +19,7 @@ class App extends Component {
   }
   const;
   componentDidMount() {
-    // fetch(this.state.url)
-    //   .then((answer) => {
-    //     return answer.json();
-    //   })
-    //   .then((answerJson) =>
-    //     this.setState({ result: answerJson.items, carregou: true })
-    //   );
+    //fetch api  for getting data
     const { url } = this.state;
     fetch(url)
       .then((answer) => {
@@ -44,12 +37,11 @@ class App extends Component {
   render() {
     const { result, items, loaded } = this.state;
     return (
-      <div>
-        <Menu />
-        <ProductList item={items} />
-        <Total result={result} loaded={loaded} />
-        <NextStepButton text="SEGUIR PARA O PAGAMENTO" />
-      </div>
+      <Router>
+        {" "}
+        <Menu Link={Link} />
+        {/* <Bag result={result} loaded={loaded} items={items} /> */}
+      </Router>
     );
   }
 }
