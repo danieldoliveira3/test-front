@@ -43,7 +43,7 @@ ul li {
   height: 16px;
   width: 89px;
   color: #ccc;
-  font-family: Roboto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: NaNpx;
@@ -61,7 +61,7 @@ ul li:last-child {
   height: 17px;
   min-width: 319px;
   color: #999;
-  font-family: Roboto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   margin-left: 20px;
   font-weight: 700;
@@ -121,7 +121,7 @@ ul li:last-child {
 /* line 103, ../../DEV/test-front/src/Input/App.scss */
 .productIgmAndName p {
   color: #212122;
-  font-family: Roboto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   letter-spacing: NaNpx;
@@ -144,7 +144,7 @@ ul li:last-child {
 .productPrice {
   text-align: right;
   color: #212122;
-  font-family: Roboto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: NaNpx;
@@ -169,7 +169,7 @@ ul li:last-child {
   margin: 0 auto;
   padding: 14px;
   color: #212122;
-  font-family: "Roboto";
+  font-family: "'Helvetica Neue', Helvetica, Arial, sans-serif";
   font-size: 14px;
   letter-spacing: NaNpx;
   line-height: 17px;
@@ -219,7 +219,7 @@ ul li:last-child {
 /* line 189, ../../DEV/test-front/src/Input/App.scss */
 .nextStepText {
   color: #fff;
-  font-family: "Roboto";
+  font-family: "'Helvetica Neue', Helvetica, Arial, sans-serif";
   font-size: 20px;
   font-weight: 700;
   text-align: center;
