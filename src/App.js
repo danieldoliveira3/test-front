@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import Menu from "./Components/Menu";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+} from "react-router-dom";
 import Bag from "./Pages/Bag";
 
 class App extends Component {
@@ -40,6 +46,9 @@ class App extends Component {
       <Router>
         <Menu Link={Link} />
         <Switch>
+          <Route exact="true" path="/">
+            <Redirect to="/bag" />
+          </Route>
           <Route path="/bag">
             <Bag result={result} loaded={loaded} items={items} />
           </Route>
