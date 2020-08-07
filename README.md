@@ -1,3 +1,6 @@
-Teste front-end da Beleza na Web
+Teste front-end da Beleza na Web.
+React Routes
+Redux (Em progresso)
+Versão Desktop não foi feita ainda.
 
-[Clique para ver o projeto](https://teste-front.vercel.app)
+[Clique para ver o projeto](https://test-front.vercel.app)
