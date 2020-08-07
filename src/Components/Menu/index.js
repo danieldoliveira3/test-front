@@ -1,5 +1,4 @@
 import React from "react";
-import Bag from "../../Pages/Bag";
 import { useLocation } from "react-router-dom";
 function Menu(props) {
   const Link = props.Link;
@@ -8,7 +7,7 @@ function Menu(props) {
     <div id="menu">
       <ul className="menuList">
         <li>
-          {location == "/bag" ? (
+          {location === "/bag" ? (
             <Link to="/bag" className="orange">
               SACOLA
             </Link>
@@ -17,7 +16,7 @@ function Menu(props) {
           )}
         </li>
         <li>
-          {location == "/payment" ? (
+          {location === "/payment" ? (
             <Link to="/payment" className="orange">
               PAGAMENTO
             </Link>
@@ -26,7 +25,7 @@ function Menu(props) {
           )}
         </li>
         <li>
-          {location == "/confirmation" ? (
+          {location === "/confirmation" ? (
             <Link to="/confirmation" className="orange">
               CONFIRMAÇÃO
             </Link>

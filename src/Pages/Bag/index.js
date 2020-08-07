@@ -5,11 +5,11 @@ import Total from "./../../Components/Total";
 import NextStepButton from "./../../Components/NextStepButton";
 
 function Bag(props) {
-  const { items, Link } = props;
+  const { items, Link, result, loaded } = props;
   return (
     <div>
       <WrapBox items={items} ChosedComponent={Products} name="PRODUTOS" />
-      <Total result={props.result} loaded={props.loaded} />
+      <Total result={result} loaded={loaded} />
       <NextStepButton
         text="SEGUIR PARA O PAGAMENTO"
         Link={Link}

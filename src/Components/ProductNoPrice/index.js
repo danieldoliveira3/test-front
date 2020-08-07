@@ -11,6 +11,9 @@ function ProductBox(props) {
         />
         <div className="wrapNameAndPrice">
           <p>{items.product.name}</p>
+          <div className="productPrice">
+            R$ {items.product.priceSpecification.price}
+          </div>
         </div>
       </div>
     </div>

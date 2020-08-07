@@ -1,14 +1,10 @@
 import React, { Component } from "react";
 import Menu from "./Components/Menu";
+import { Provider } from "react-redux";
+import store from "./store";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect,
-} from "react-router-dom";
-import Bag from "./Pages/Bag";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+import Routes from "./routes";
 
 class App extends Component {
   constructor(props) {
@@ -23,7 +19,7 @@ class App extends Component {
       total: 0,
     };
   }
-  const;
+
   componentDidMount() {
     //fetch api  for getting data
     const { url } = this.state;
@@ -43,25 +39,12 @@ class App extends Component {
   render() {
     const { result, items, loaded } = this.state;
     return (
-      <Router>
-        <Menu Link={Link} />
-        <Switch>
-          <Route exact="true" path="/">
-            <Redirect to="/bag" />
-          </Route>
-          <Route path="/bag">
-            <Bag result={result} loaded={loaded} items={items} Link={Link} />
-          </Route>
-
-          <Route path="/payment">
-            <div>payment</div>
-          </Route>
-
-          <Route path="/confirmation">
-            <div>confirmation</div>
-          </Route>
-        </Switch>
-      </Router>
+      <Provider store={store}>
+        <Router>
+          <Menu Link={Link} />
+          <Routes result={result} items={items} loaded={loaded} />
+        </Router>
+      </Provider>
     );
   }
 }
