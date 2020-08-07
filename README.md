@@ -1,6 +1,6 @@
 Teste front-end da Beleza na Web.
 
-<br>
+<br/>
 <ul>
   <li>REACT ROUTER DOM</li>
   <li>REDUX (Em progresso)</li>
@@ -10,5 +10,6 @@ Teste front-end da Beleza na Web.
   
 
 
-<br>
+<br/>
+
 [Clique para ver o projeto](https://test-front.vercel.app)
